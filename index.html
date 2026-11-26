@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Nguan Jin Enterprise Sdn Bhd — Sarawak contractor established since 1983. Building, civil engineering, maintenance, earthworks and specialist works.">
+<title>Nguan Jin Enterprise Sdn Bhd | Sarawak Contractor</title>
+<style>
+:root{--navy:#0a1625;--navy2:#102338;--gold:#f2a900;--cream:#f5f4ef;--white:#fff;--muted:#667386;--line:#dfe4ea;--shadow:0 18px 50px rgba(9,25,43,.12)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--navy);background:#fff;line-height:1.6}a{text-decoration:none;color:inherit}.container{width:min(1160px,92%);margin:auto}
+header{position:fixed;top:0;left:0;right:0;z-index:20;background:rgba(10,22,37,.94);backdrop-filter:blur(12px);border-bottom:1px solid rgba(255,255,255,.08)}
+.nav{height:76px;display:flex;align-items:center;justify-content:space-between}.brand{display:flex;align-items:center;gap:12px;color:#fff;font-weight:800;letter-spacing:.02em}.mark{width:42px;height:42px;border:2px solid var(--gold);display:grid;place-items:center;transform:skew(-8deg);font-weight:900;color:var(--gold)}.brand small{display:block;font-size:10px;letter-spacing:.16em;color:#b8c2ce;font-weight:600}.links{display:flex;gap:25px;color:#dce3ea;font-size:14px;font-weight:600}.links a:hover{color:var(--gold)}.menu{display:none;background:none;border:0;color:#fff;font-size:26px}
+.hero{min-height:780px;padding-top:76px;background:radial-gradient(circle at 80% 20%,#24445f 0,#122a42 35%,#07121f 72%);color:#fff;position:relative;overflow:hidden}.hero:after{content:"";position:absolute;inset:auto -10% -25% auto;width:680px;height:680px;border:1px solid rgba(242,169,0,.22);border-radius:50%;box-shadow:0 0 0 70px rgba(242,169,0,.03),0 0 0 140px rgba(242,169,0,.02)}.hero-grid{min-height:704px;display:grid;grid-template-columns:1.1fr .9fr;align-items:center;gap:60px;position:relative;z-index:1}.eyebrow{color:var(--gold);font-weight:800;letter-spacing:.18em;font-size:12px;text-transform:uppercase}.hero h1{font-size:clamp(44px,6vw,78px);line-height:.98;margin:18px 0 24px;letter-spacing:-.045em}.hero h1 span{color:var(--gold)}.hero p{max-width:640px;color:#cbd5df;font-size:18px}.buttons{display:flex;gap:12px;flex-wrap:wrap;margin-top:32px}.btn{padding:13px 20px;border-radius:3px;font-weight:800;border:1px solid transparent}.btn-primary{background:var(--gold);color:#111}.btn-outline{border-color:#617286;color:#fff}.hero-card{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);padding:28px;box-shadow:var(--shadow)}.hero-card .big{font-size:56px;font-weight:900;color:var(--gold);line-height:1}.hero-card h3{margin:10px 0 6px}.hero-card p{font-size:14px;margin:0;color:#bdc9d4}
+section{padding:95px 0}.section-head{display:flex;justify-content:space-between;gap:30px;align-items:end;margin-bottom:40px}.section-head h2{font-size:42px;line-height:1.05;margin:8px 0}.section-head p{max-width:560px;color:var(--muted)}.kicker{font-size:11px;text-transform:uppercase;letter-spacing:.18em;font-weight:900;color:#8a6500}
+.about{background:var(--cream)}.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:start}.about-copy p{color:#556273}.facts{display:grid;grid-template-columns:1fr 1fr;gap:14px}.fact{background:#fff;padding:25px;border:1px solid var(--line)}.fact strong{display:block;font-size:30px;color:var(--navy)}.fact span{font-size:13px;color:var(--muted)}
+.services{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.service{padding:28px;border:1px solid var(--line);min-height:190px;transition:.25s}.service:hover{transform:translateY(-4px);box-shadow:var(--shadow);border-color:#c6a13f}.icon{font-size:28px;color:var(--gold)}.service h3{margin:12px 0 8px}.service p{color:var(--muted);font-size:14px}
+.dark{background:var(--navy);color:#fff}.dark .section-head p{color:#aeb9c5}.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:#294057;margin-top:35px}.stat{background:var(--navy);padding:30px}.stat b{font-size:34px;color:var(--gold);display:block}.stat span{color:#aeb9c5;font-size:13px}
+.project-controls{display:flex;gap:8px;margin-bottom:25px;flex-wrap:wrap}.filter{border:1px solid var(--line);background:#fff;padding:9px 15px;font-weight:700;cursor:pointer}.filter.active,.filter:hover{background:var(--navy);color:#fff;border-color:var(--navy)}.projects{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}.project{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:start;gap:8px 24px;padding:18px 0;border-bottom:1px solid var(--line)}.project-tag{justify-self:start;background:var(--gold);color:#111;font-size:10px;font-weight:900;padding:5px 8px}.project h3{font-size:17px;line-height:1.3;margin:0 0 6px}.project p{font-size:13px;color:var(--muted);margin:0}
+.table-wrap{overflow:auto;border:1px solid var(--line)}table{border-collapse:collapse;width:100%;min-width:850px;font-size:13px}th,td{text-align:left;padding:14px;border-bottom:1px solid var(--line);vertical-align:top}th{background:#f2f4f7;font-size:11px;text-transform:uppercase;letter-spacing:.06em}tr:last-child td{border-bottom:0}
+.cert-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.cert{border:1px solid #30445a;padding:24px;background:#0e2033}.cert b{color:var(--gold);font-size:13px}.cert h3{margin:9px 0}.cert p{color:#aeb9c5;font-size:13px;margin:0}
+.contact{background:var(--cream)}.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:35px}.contact-card{background:#fff;padding:30px;border:1px solid var(--line)}.contact-card h3{margin-top:0}.contact-row{padding:14px 0;border-bottom:1px solid var(--line)}.contact-row:last-child{border-bottom:0}.contact-row small{display:block;color:var(--muted);text-transform:uppercase;font-size:10px;letter-spacing:.12em;font-weight:800}.contact-row a{color:#765700;font-weight:700}
+footer{background:#06101c;color:#9eabb8;padding:28px 0;font-size:12px}.footer-flex{display:flex;justify-content:space-between;gap:20px}.footer-flex strong{color:#fff}
+@media(max-width:850px){.links{display:none;position:absolute;top:76px;left:0;right:0;background:#0a1625;padding:18px 4%;flex-direction:column}.links.open{display:flex}.menu{display:block}.hero-grid,.about-grid,.contact-grid{grid-template-columns:1fr}.hero{min-height:auto}.hero-grid{padding:90px 0}.hero-card{max-width:500px}.services{grid-template-columns:1fr 1fr}.cert-grid{grid-template-columns:1fr 1fr}.stats{grid-template-columns:1fr 1fr}.section-head{display:block}}
+@media(max-width:560px){section{padding:70px 0}.hero h1{font-size:48px}.services,.cert-grid{grid-template-columns:1fr}.project{grid-template-columns:1fr}.stats{grid-template-columns:1fr 1fr}.facts{grid-template-columns:1fr}.footer-flex{display:block}.footer-flex div+div{margin-top:10px}}
+</style>
+</head>
+<body>
+<header><div class="container nav">
+<a class="brand" href="#home"><div class="mark">NJ</div><div>NGUAN JIN<small>ENTERPRISE SDN BHD</small></div></a>
+<nav class="links" id="links"><a href="#about">About</a><a href="#services">Services</a><a href="#projects">Projects</a><a href="#machinery">Capabilities</a><a href="#certifications">Certifications</a><a href="#contact">Contact</a></nav>
+<button class="menu" onclick="document.getElementById('links').classList.toggle('open')" aria-label="Menu">☰</button>
+</div></header>
+
+<main>
+<section class="hero" id="home"><div class="container hero-grid">
+<div><div class="eyebrow">Established since 1983 · Sarawak</div>
+<h1>Building Sarawak's <span>future.</span></h1>
+<p>Nguan Jin Enterprise Sdn Bhd is an established Sarawak contractor delivering building, civil engineering, maintenance, earthworks and specialist construction works.</p>
+<div class="buttons"><a class="btn btn-primary" href="#projects">View Projects</a><a class="btn btn-outline" href="#contact">Contact Us</a></div></div>
+<div class="hero-card"><div class="big">G7</div><h3>CIDB Registered Contractor</h3><p>Grade G7 with Building, Civil Engineering and Mechanical & Electrical categories, alongside Class A UPKJ registrations.</p><hr style="border:0;border-top:1px solid rgba(255,255,255,.12);margin:24px 0"><div style="font-size:12px;color:#aeb9c5">REGISTRATION · 111445-K<br>CIDB · 0120100929-SR131185</div></div>
+</div></section>
+
+<section class="about" id="about"><div class="container"><div class="section-head"><div><div class="kicker">Company</div><h2>Built on experience.<br>Focused on delivery.</h2></div><p>With a long-standing presence in Sarawak, the company has completed building, civil, maintenance, earthworks and specialist works including micropiling and sheet piling.</p></div>
+<div class="about-grid"><div class="about-copy"><p>NGUAN JIN ENTERPRISE SDN BHD was established in 1983 and has developed into a well-established contractor serving projects across Sarawak.</p><p>The company profile records more than 10 years of construction experience and registration at CIDB Grade G7 and UPKJ Class A.</p></div>
+<div class="facts"><div class="fact"><strong>1983</strong><span>Established</span></div><div class="fact"><strong>G7</strong><span>CIDB grade</span></div><div class="fact"><strong>Class A</strong><span>UPKJ work registration</span></div><div class="fact"><strong>3 Star</strong><span>CIDB SCORE 2026</span></div></div></div></div></section>
+
+<section id="services"><div class="container"><div class="section-head"><div><div class="kicker">What we do</div><h2>Construction capabilities</h2></div></div>
+<div class="services">
+<div class="service"><div class="icon">▦</div><h3>Building Works</h3><p>Building construction and related works, including public facilities and commercial structures.</p></div>
+<div class="service"><div class="icon">⌁</div><h3>Civil Engineering</h3><p>Roads, bridges, riverwalls, waterfronts, drainage, coastal and infrastructure works.</p></div>
+<div class="service"><div class="icon">◒</div><h3>Earthworks</h3><p>Earthworks, road upgrades, slope works and site-related construction activities.</p></div>
+<div class="service"><div class="icon">≈</div><h3>Maintenance</h3><p>Maintenance and remedial works for roads, ferry landings, jetties and infrastructure.</p></div>
+<div class="service"><div class="icon">✚</div><h3>Micropiling</h3><p>Specialist foundation works including micropiling, as recorded in the company portfolio.</p></div>
+<div class="service"><div class="icon">▥</div><h3>Sheet Piling</h3><p>Specialist riverwall and sheet piling works, including a 680m riverwall project.</p></div>
+</div></div></section>
+
+<section class="dark"><div class="container"><div class="section-head"><div><div class="kicker">Track record</div><h2>Selected portfolio figures</h2></div></div>
+<div class="stats"><div class="stat"><b>1983</b><span>Year established</span></div><div class="stat"><b>G7</b><span>CIDB contractor grade</span></div><div class="stat"><b>RM48.0m</b><span>Largest listed ongoing contract</span></div><div class="stat"><b>RM22.26m</b><span>Selected completed contract</span></div></div></div></section>
+
+<section id="projects"><div class="container"><div class="section-head"><div><div class="kicker">Portfolio</div><h2>Selected projects</h2></div></div>
+<div class="project-controls"><button type="button" class="filter active" data-filter="all" aria-pressed="true">All</button><button type="button" class="filter" data-filter="completed" aria-pressed="false">Completed</button><button type="button" class="filter" data-filter="ongoing" aria-pressed="false">Ongoing</button></div>
+<ul class="projects" id="projectList" role="list"></ul></div></section>
+
+<section id="machinery" class="about"><div class="container"><div class="section-head"><div><div class="kicker">Capabilities</div><h2>Plant & machinery</h2></div></div>
+<div class="services"><div class="service"><h3>Earthmoving</h3><p>Backhoe loaders, excavators, bulldozers and graders.</p></div><div class="service"><h3>Roadworks</h3><p>Road rollers, asphalt pavers and related road construction equipment.</p></div><div class="service"><h3>Transport</h3><p>Rigid dumpers, low loaders, pickups and support vehicles.</p></div><div class="service"><h3>Material Handling</h3><p>Forklifts, concrete mixers and other site support equipment.</p></div><div class="service"><h3>Marine / Access</h3><p>Boats and equipment supporting waterfront and ferry landing works.</p></div><div class="service"><h3>Support Fleet</h3><p>Utility and site-support vehicles used across project operations.</p></div></div></div></section>
+
+<section id="certifications" class="dark"><div class="container"><div class="section-head"><div><div class="kicker">Registrations</div><h2>Certifications & registrations</h2></div></div>
+<div class="cert-grid"><div class="cert"><b>CIDB</b><h3>Grade G7</h3><p>Registration 0120100929-SR131185. Effective 26 Jan 2026 to 23 Jul 2027. Categories include Building, Civil Engineering, Mechanical & Electrical.</p></div>
+<div class="cert"><b>UPKJ SARAWAK</b><h3>Class A — Work</h3><p>Registration UPKJ/W/022151. Listed expiry: 04 Nov 2028.</p></div>
+<div class="cert"><b>UPKJ SARAWAK</b><h3>Class A — Supply & Services</h3><p>Registration UPKJ/S/008352. Listed expiry: 05 Nov 2026.</p></div>
+<div class="cert"><b>CIDB SCORE</b><h3>3 Star · 2026</h3><p>Certificate of Achievement, Grade G7. Valid until 08 Jun 2028.</p></div>
+<div class="cert"><b>GOVERNMENT PROCUREMENT</b><h3>G7</h3><p>Registered company with Building, Civil Engineering and Mechanical & Electrical categories.</p></div>
+<div class="cert"><b>LEADERSHIP</b><h3>Tie Tze Chong & NGUI SAI MEE</h3><p>Directors listed in the company profile. Public Bank is listed as banker.</p></div></div></div></section>
+
+<section><div class="container"><div class="section-head"><div><div class="kicker">Project register</div><h2>Selected contract records</h2></div></div>
+<div class="table-wrap"><table><thead><tr><th>Project</th><th>Client / Partner</th><th>Period</th><th>Value</th></tr></thead><tbody>
+<tr><td>Jalan Kampung Long Beyak, Tatau, Bintulu</td><td>JKR Bintulu · Tokoh Ilham</td><td>Apr 2024 – Oct 2026 · 30 months</td><td>RM48,000,321.49</td></tr>
+<tr><td>New road to ASAP Resettlement Scheme Service Centre 1</td><td>JKR Kapit</td><td>Sep 2024 – Sep 2026 · 24 months</td><td>RM43,306,437.38</td></tr>
+<tr><td>Road upgrade to Tegulang Resettlement Phase 5</td><td>JKR Kapit · Tokoh Ilham</td><td>Apr 2024 – Oct 2025 · 18 months</td><td>RM35,015,095</td></tr>
+<tr><td>Flood mitigation, coastal bund & drainage at Sebangan Bajong</td><td>JPS Sarawak · Samado</td><td>Jul 2021 – Jul 2023 · 24 months</td><td>RM22,256,042</td></tr>
+<tr><td>Riverwall 680m, Kpg Sg Bedil to Kpg Lintang</td><td>JPS Sarawak · H.K.K & Salem</td><td>Feb 2019 – Aug 2020 · 18 months</td><td>RM16,476,318</td></tr>
+<tr><td>Lingga Waterfront Phase 2</td><td>LCDA · FDZ Engineering</td><td>Apr 2025 – Jul 2026 · 15 months</td><td>RM15,970,000</td></tr>
+</tbody></table></div></div></section>
+
+<section class="contact" id="contact"><div class="container"><div class="section-head"><div><div class="kicker">Get in touch</div><h2>Let’s build something<br>that lasts.</h2></div><p>For enquiries, project opportunities and company information, contact the Bintulu headquarters or Kuching office.</p></div>
+<div class="contact-grid"><div class="contact-card"><h3>Bintulu Headquarters</h3><div class="contact-row"><small>Address</small>Lot 1012, Kemena Land District, Kidurong Industrial Area, P.O. Box 3006, 97012 Bintulu, Sarawak</div><div class="contact-row"><small>Telephone</small><a href="tel:+6086251331">086-251331</a></div><div class="contact-row"><small>Mobile</small><a href="tel:+60198142318">019-8142318</a></div><div class="contact-row"><small>Email</small><a href="mailto:nguanjin@yahoo.com">nguanjin@yahoo.com</a></div></div>
+<div class="contact-card"><h3>Kuching Office</h3><div class="contact-row"><small>Address</small>SL 5408, Block E Floor 2, RH Plaza, Jalan Lapangan Terbang, 93350 Kuching, Sarawak</div><div class="contact-row"><small>Email</small><a href="mailto:nguanjin.kch@gmail.com">nguanjin.kch@gmail.com</a></div><div class="contact-row"><small>Email</small><a href="mailto:nguanjinent.kch@gmail.com">nguanjinent.kch@gmail.com</a></div><div class="contact-row"><small>Registration</small>NGUAN JIN ENTERPRISE SDN BHD · 111445-K</div></div></div></div></section>
+</main>
+<footer><div class="container footer-flex"><div><strong>NGUAN JIN ENTERPRISE SDN BHD</strong> · Established since 1983</div><div>Company profile website concept · 2026</div></div></footer>
+
+<script>
+const projects=[
+["completed","Dalat Waterfront Fasa 2","Mukah","JKR Bahagian Mukah"],
+["completed","Dalat Waterfront Fasa 1","Dalat","JKR Bahagian Mukah"],
+["completed","Balingian RGC Roundabout / Coastal Road Improvement","Balingian","JKR Sarawak"],
+["completed","SMK Paku Improvement & Riverwall","Bau","JKR Malaysia / Sarawak"],
+["completed","Subis Waterfront Phase 1","Sarawak","Public infrastructure"],
+["completed","300 Single-Storey Houses at RGC Semop","Semop","Housing works"],
+["completed","New Steel Bridge to Rumah Panjang Raymond Lahang","Sebauh","Bridge works"],
+["completed","Gabion Retaining Wall & Slope-Failure Repairs","Tatau–Bintulu / Tatau–Sibu","Road infrastructure"],
+["completed","Ferry Landing Maintenance","Batang Kemena","Marine infrastructure"],
+["completed","Micropiling at SMK Bandar Bintulu","Bintulu","Specialist works"],
+["completed","Sheet Piling / Riverwall 680m","Kuching","JPS Sarawak"],
+["ongoing","Jalan Kampung Long Beyak","Tatau, Bintulu","JKR Bintulu"],
+["ongoing","Road Upgrade to Tegulang Resettlement Phase 5","Kapit","JKR Kapit"],
+["ongoing","New Road to ASAP Resettlement Scheme Service Centre 1","Kapit","JKR Kapit"],
+["ongoing","Kampung Semarang Coastal Erosion Control","Pusa, Betong","Coastal protection"],
+["ongoing","Lingga Waterfront Phase 2","Lingga","LCDA"],
+["ongoing","Apau Koyan Cultural Heritage Site","Belaga","Pejabat Residen Bintulu"],
+["ongoing","2-Storey Food Court, Jalan Pantai Tanjung Batu","Bintulu","Bintulu Development Authority"],
+["ongoing","Jambatan Kampung Bulau","Bekenu","JKR Sarawak"],
+["ongoing","Jalan Akses Selangau","Selangau","JKR Sarawak"]
+];
+const projectList=document.getElementById("projectList");
+const filters=document.querySelectorAll(".filter");
+function render(filter="all"){
+ projectList.innerHTML=projects.filter(([status])=>filter==="all"||status===filter).map(([status,name,location,details])=>`
+ <li class="project"><div><h3>${name}</h3><p>${location} · ${details}</p></div><span class="project-tag">${status.toUpperCase()}</span></li>`).join("");
+}
+render();
+filters.forEach(button=>button.addEventListener("click",()=>{
+ filters.forEach(filter=>{
+  filter.classList.toggle("active",filter===button);
+  filter.setAttribute("aria-pressed",String(filter===button));
+ });
+ render(button.dataset.filter);
+}));
+</script>
+</body>
+</html>
